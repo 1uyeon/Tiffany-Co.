@@ -381,6 +381,7 @@ footer p {
     font-weight: 500;
     font-family: 'Noto Sans KR', sans-serif;
     border: none;
+    cursor: pointer;
 }
 .R_footer {
     display: flex;
