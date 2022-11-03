@@ -76,6 +76,9 @@ p {
 .cart {
     margin-left: 16px;
 }
+.menu {
+    display: none;
+}
 nav {
     position: absolute;
     top: 93px;
@@ -98,7 +101,7 @@ nav ul li a:hover {
 /* 티파니 티 영역 */
 .tiffanyT {
     width: 100%;
-    padding: 56px;
+    padding: 0 56px;
     margin-top: 104px;
     display: flex;
     overflow: hidden;
@@ -244,15 +247,18 @@ nav ul li a:hover {
     margin-bottom: 10px;
 }
 .cat_content {
+    width: 100%;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 }
 .cat_content>div {
     margin-bottom: 13px;
 }
 .cat_content>div:not(:last-child) {
     margin-right: 14px;
+}
+.cat_content>div img {
+    width: 100%;
 }
 .cat_content span {
     display: block;
@@ -279,7 +285,6 @@ nav ul li a:hover {
     left: 10%;
 }
 .wTxt a {
-    width: 71px;
     color: #777777;
     text-decoration: underline;
     text-align: center;
@@ -347,7 +352,6 @@ footer p {
     padding-top: 72px;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 }
 .L_footer {
     margin-right: 96px;
@@ -408,4 +412,144 @@ copyright {
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.05em;
+}
+
+
+/* 1024px */
+@media (max-width: 1024px) {
+    .topmenu {
+        left: 32px;
+        right: 32px;
+    }
+    .mainWrap {
+        height: 490px;
+    }
+    .mainWrap video {
+        top: -420px;
+    }
+    nav {
+        display: none;
+    }
+    .user, .cart {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
+    .logo {
+        width: 147px;
+    }
+    .logo img {
+        width: 100%;
+    }
+
+    .tiffanyT {
+        margin-top: 80px;
+        padding: 0 32px;
+        margin-bottom: 8px;
+    }
+    h1 {
+        font-size: 24px;
+        margin-bottom: 13px;
+    }
+    p {
+        margin-bottom: 10px;
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .tiffanyT>div {
+        margin-right: 12px;
+    }
+    .tTxt p span {
+        display: block;
+    }
+    .tTxt a {
+        padding: 0;
+        border: none;
+        line-height: 13px;
+        font-size: 13px;
+        color: #777777;
+        text-decoration: underline;
+    }
+    .T_slider {
+        margin-bottom: 88px;
+    }
+    .T_product {
+        padding: 0 24px 0 32px;
+    }
+    .slick-slide>div {
+        padding-right: 8px;
+    }
+    .arrow_button {
+        padding: 0 45px;
+        top: 45%;
+    }
+    .arrow_button > div {
+        width: 35px;
+    }
+    .arrow_button>div img {
+        width: 100%;
+    }
+
+    .hardwear {
+        height: 373px;
+        margin-bottom: 88px;
+    }
+    .hwTxt a {
+        padding: 0;
+        border: none;
+        line-height: 13px;
+        font-size: 13px;
+        color: #777777;
+        text-decoration: underline;
+    }
+
+    .story {
+        padding: 0 32px;
+        margin-bottom: 88px;
+    }
+    .story h2 {
+        font-size: 16px;
+        line-height: 23px;
+        margin-bottom: 2px;
+    }
+    .tab_txt {
+        margin-top: 8px;
+    }
+    .tab_txt span {
+        display: block;
+    }
+
+    .category {
+        padding: 0 32px;
+        margin-bottom: 88px;
+    }
+    .cat_title h1 {
+        margin-bottom: 3px;
+    }
+    .cat_content>div:not(:last-child) {
+        margin-right: 8px;
+    }
+    .cat_content span {
+        font-size: 12px;
+        font-weight: 300;
+        margin-top: 5px;
+    }
+
+    .wedding {
+        height: 273px;
+    }
+    .wTxt a {
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .bottom_footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .L_footer {
+        margin-right: 0;
+        margin-bottom: 60px;
+    }
 }
