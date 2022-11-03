@@ -200,3 +200,42 @@ nav ul li a:hover {
     background-color: #222;
     color: #FFF;
 }
+
+/* 스토리 영역 */
+.story {
+    display: flex;
+    padding: 0 56px;
+    width: 100%;
+    justify-content: center;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #222;
+    margin-bottom: 160px;
+}
+.story .tab {
+    cursor: pointer;
+}
+.story .tab:not(:last-child) {
+    margin-right: 16px;
+}
+.tab_img {
+    width: 100%;
+    overflow: hidden;
+}
+.tab_img:hover img{
+    transform: scale(1.1);
+}
+.tab_img img {
+    width: 100%;
+    transition: all 0.3s linear;
+}
+.tab_txt {
+    text-align: center;
+    margin-top: 18px;
+}
+.story h2 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 35px;
+    letter-spacing: -0.03em;
+    margin-bottom: 8px;
+}
