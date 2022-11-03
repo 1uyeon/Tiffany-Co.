@@ -19,7 +19,6 @@ ol, ul {
 a {
     text-decoration: none;
     color: inherit;
-    display: block;
 }
 body {
     position: relative;
@@ -33,6 +32,7 @@ h1 {
     font-weight: 400;
     letter-spacing: 0.05em;
     color: #222222;
+    margin-bottom: 20px;
 }
 p {
     font-family: 'Noto Sans KR', sans-serif;
@@ -121,16 +121,10 @@ nav ul li a:hover {
     width: 100%;
     padding-top: 40%;
 }
-.tTxt hr {
-    margin: 15px auto;
-    width: 435px;
-    border: 1px solid #E5E5E5;
-}
 .tTxt a {
     font-weight: 300;
-    width: 210px;
-    height: 40px;
-    line-height: 35px;
+    padding: 8px 20px;
+    line-height: 45px;
     border: 1px solid #222;
     margin: 0 auto;
 }
@@ -184,14 +178,10 @@ nav ul li a:hover {
     position: absolute;
     text-align: center;
 }
-.hwTxt h1 {
-    margin-bottom: 20px;
-}
 .hwTxt a {
     font-weight: 300;
-    width: 250px;
-    height: 40px;
-    line-height: 40px;
+    padding: 8px 20px;
+    line-height: 35px;
     border: 1px solid #222;
     margin: 0 auto;
 }
@@ -268,4 +258,153 @@ nav ul li a:hover {
     display: block;
     text-align: center;
     margin-top: 18px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+}
+
+/* 하단 배너 - 웨딩링 영역 */
+.wedding {
+    width: 100%;
+    height: 512px;
+    background-image: url(/images/wedding.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: relative;
+}
+.wTxt {
+    position: absolute;
+    text-align: center;
+    top: 35%;
+    left: 10%;
+}
+.wTxt a {
+    width: 71px;
+    color: #777777;
+    text-decoration: underline;
+    text-align: center;
+}
+
+/* 푸터 영역 */
+footer {
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 100%;
+    height: auto;
+    background-color: #222;
+    color: #FFF;
+}
+footer p {
+    color: #FFF;
+}
+.top_footer {
+    width: 100%;
+    height: 384px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    padding-top: 90px;
+}
+.top_footer>div {
+    display: flex;
+    justify-content: center;
+    max-width: 715px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.service {
+    text-align: center;
+}
+.service p {
+    margin-bottom: 8px;
+    font-size: 12px;
+    line-height: 17px;
+}
+.service a {
+    color: #C4C4C4;
+    font-size: 12px;
+    text-decoration: underline;
+}
+.circle {
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 68px;
+    width: 136px;
+    height: 136px;
+    text-align: center;
+    padding-top: 28px;
+    margin: 0 auto;
+    margin-bottom: 12px;
+}
+.service:nth-child(2) .circle {
+    padding-top: 38px;
+}
+.circle span {
+    display: block;
+    margin-top: 8px;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.bottom_footer {
+    width: 100%;
+    padding-top: 72px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.L_footer {
+    margin-right: 96px;
+    font-weight: 300;
+    font-size: 13px;
+    letter-spacing: -0.03em;
+}
+.L_footer h2 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.news_form {
+    margin-top: 24px;
+    display: flex;
+}
+.news_form input {
+    width: 297px;
+    height: 44px;
+    border: 1px  solid rgba(255,255,255,0.5);
+    background-color: #222;
+    padding-left: 16px;
+    padding-right: 10px;
+    color: #FFF;
+}
+.news_form button {
+    height: 44px;
+    width: 133px;
+    background-color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Noto Sans KR', sans-serif;
+    border: none;
+}
+.R_footer {
+    display: flex;
+}
+.R_footer ul {
+    margin-right: 32px;
+    font-size: 13px;
+    line-height: 19px;
+}
+.R_footer ul li:not(:last-child) {
+    margin-bottom: 12px;
+}
+.R_footer ul li:not(:first-child) {
+    font-weight: 300;
+}
+.copy {
+    margin-top: 72px;
+    text-align: center;
+    padding-bottom: 80px;
+}
+copyright {
+    margin-top: 8px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
 }
