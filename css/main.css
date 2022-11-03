@@ -1,18 +1,30 @@
 @charset "utf-8";
 
+/* 초기화 */
 * {
+	margin: 0;
+	padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:  border-box;
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: 'Noto Sans KR', sans-serif;
 }
-body {
-    margin: 0;
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
 }
 a {
-    color: inherit;
     text-decoration: none;
+    color: inherit;
+    display: block;
 }
+body {
+    position: relative;
+}
+/* 초기화 끝 */
 
 /* 메인 영역 */
 .mainWrap {
@@ -40,6 +52,9 @@ a {
     justify-content: space-between;
     z-index: 1;
 }
+.L_menu {
+    display: flex;
+}
 .cart {
     margin-left: 16px;
 }
@@ -61,3 +76,87 @@ nav ul li:not(:last-child) {
 nav ul li a:hover {
     font-weight: 700;
 }
+
+/* 티파니 티 영역 */
+.tiffanyT {
+    width: 100%;
+    padding: 56px;
+    margin-top: 104px;
+    display: flex;
+    overflow: hidden;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.tiffanyT>div {
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+    margin-right: 16px;
+}
+.tiffanyT>div img {
+    width: 100%;
+}
+.tiffanyT .tTxt {
+    text-align: center;
+    color: #222222;
+}
+.tiffanyT .tTxt>div {
+    width: 100%;
+    padding-top: 40%;
+}
+.tTxt h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+}
+.tTxt p {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 25px;
+    line-height: 1.3;
+}
+.tTxt hr {
+    margin: 15px auto;
+    width: 435px;
+    border: 1px solid #E5E5E5;
+}
+.tTxt a {
+    font-weight: 300;
+    width: 210px;
+    height: 40px;
+    line-height: 35px;
+    border: 1px solid #000;
+    margin: 0 auto;
+}
+.tTxt a:hover {
+    border: none;
+    background-color: #000;
+    color: #FFF;
+}
+.T_slider {
+    position: relative;
+}
+.T_product {
+    padding: 0 40px 0 56px;
+}
+.slick-slide div {
+    padding: 0;
+}
+.slick-slide>div {
+    padding-right: 16px;
+}
+.T_product>div img {
+    width: 100%;
+}
+.arrow_button {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+.arrow_button>div {
+    cursor: pointer;
+}
+
