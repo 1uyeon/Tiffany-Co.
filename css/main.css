@@ -239,3 +239,33 @@ nav ul li a:hover {
     letter-spacing: -0.03em;
     margin-bottom: 8px;
 }
+
+/* 카테고리 영역 */
+.category {
+    width: 100%;
+    padding: 0 56px;
+    margin-bottom: 160px;
+}
+.cat_title {
+    text-align: center;
+    margin: 0 auto;
+}
+.cat_title h1{
+    margin-bottom: 10px;
+}
+.cat_content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cat_content>div {
+    margin-bottom: 13px;
+}
+.cat_content>div:not(:last-child) {
+    margin-right: 14px;
+}
+.cat_content span {
+    display: block;
+    text-align: center;
+    margin-top: 18px;
+}
